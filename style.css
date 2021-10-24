@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Google Font */
+
+/* font-family: 'Koh Santepheap', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Mukta', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Rubik', sans-serif; */
+
+
+/* Universal CSS */
+
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+a{
+    color: bisque;
+    font-size: 1.2rem;
+    text-decoration: none;
+     
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.dotted-hr{
+    border: 5px dotted whitesmoke;
+    border-bottom: none;
+    margin: 20px auto;
+    min-width: 100%;
+}
+
+ /* CSS For Mobile */
+
+ [class*="col-"]{
+    width: 100%;
+}
+
+
+ /* CSS For Desktop */
+
+ [class*="col-"]{
+     float: left;
+     padding: 10px;
+ }
+ 
+
+/* Header Section Start */
+ 
+.nav-bar{
+    background-color:#22a6b3 ;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.nav-bar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-bar h1{
+    color: blanchedalmond;
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Koh Santepheap', cursive;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.nav-menu a{
+    font-family: 'Rubik', sans-serif;
+    border-radius: 15px;
+    padding: 12px;
+    margin: 7px 0;
+    transition: .6s;
+}
+
+.nav-menu a:hover{
+    background-color: #1e7a83;
+}
+
+.nav-logo img{
+ width: 90px;
+ height: 90px;
+ border-radius: 50%;
+ border: 1.5px solid #99794f;
+}
+
+/* Header Section End */
+
+
+/* Main section Start */
+
+
+/* Profile Section Start */
+
+.profile::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.profile{
+ padding: 120px 80px;
+ text-align: center;
+ position: relative;
+ padding: 22% 5%;
+}
+.profile-dec h1{
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+  word-spacing: 8px;
+}
+.profile-dec p{
+    text-align: center;
+    margin: 35px auto;
+    width: 60%;
+    font-family: 'Lobster', cursive;
+    word-spacing: 8px;
+}
+
+
+/* Profile Section End */
+
+
+/* About Me Section Start */
+
+.about-me::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.about-me{
+    text-align: center;
+    background-color:#22a6b3;
+    color: azure;
+    padding:7% 8% ;
+}
+
+
+.about-img img{
+ max-width: 100%;
+ border: 4px solid #273c75;
+ text-align: center;
+ width: 200px;
+ border-radius: 50%;
+ 
+} 
+.about-dec{
+    padding: 15px;
+}
+.about-me h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.about-dec p{
+padding: 12px 0;
+text-align: center;
+}
+.btn-div{
+    text-align: center;
+}
+.btn-div .btn{
+    border: none;
+    background-color:#264c6b ;
+    color: whitesmoke;
+    padding: 12px;
+    border-radius: 15px;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: .5s;
+}
+.btn-div .btn:hover{
+    background-color: yellowgreen;
+}
+/* About Me Section End */
+
+
+/* Work Section Start */
+
+.wes{
+
+padding: 4% 1%;
+}
+.wes::after{
+    content: "";
+    clear: both;
+    display: table;
+
+}
+.card{
+    background-color: #CAD3C8;
+    
+    
+    
+    border-radius: 10px;
+    transition: .6s;
+    margin-bottom: 25px;
+}
+.card:hover{
+    box-shadow: 0px 0px 16px
+
+}
+.card-icon {
+    text-align: center; 
+}
+.card-icon img{
+    width: 50px;
+    margin: 20px;
+}
+.card-dec h2{
+    text-align: center;
+    padding: 12px;
+    background-color: #95afc0;
+    border-radius: 8px;
+   margin: 10px;
+}
+.card-dec li{
+    list-style: none;
+    padding: 25px ;
+}
+
+.skill-cantainer{
+    padding-right: 25px;
+    padding-bottom: 20px;
+}
+
+
+.card-title {
+    text-align: center;
+    text-align: center;
+    padding: 12px;
+    background-color: #95afc0;
+    border-radius: 8px;
+    margin: 10px;
+}
+.skill-cantainer li{
+    font-weight: bolder;
+    position: relative;
+    margin:0 10px;
+   
+}
+
+.skill-cantainer li::before{
+    content: "";
+    background-color: #130f40;
+    opacity: .499;
+    position: absolute;
+    top: calc(100% + 1px);
+    margin-top: -17px;
+    width: 100%;
+    height: 10px;
+    border-radius: 29px;
+}
+.skill-cantainer li::after{
+    content: "";
+    background-color: #130f40;
+   
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 23.9px;
+    margin-top: -17px;
+    width: 0;
+    height: 10px;
+    border-radius: 29px;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.skill-cantainer li.html::after{
+    animation-name: html;
+}
+.skill-cantainer li.css::after{
+    animation-name: css;
+}
+.skill-cantainer li.bootstarp::after{
+    animation-name: bootstarp;
+}
+.skill-cantainer li.wordpress::after{
+    animation-name: wordpress;
+}
+.skill-cantainer li.javascript::after{
+    animation-name: javascript;
+}
+.skill-cantainer li.jqueary::after{
+    animation-name: jqueary;
+}
+.skill-cantainer li.react::after{
+    animation-name: react;
+}
+.skill-cantainer li.vue::after{
+    animation-name: vue;
+}
+.skill-cantainer li.node::after{
+    animation-name: node;
+}
+.skill-cantainer li.github::after{
+    animation-name: github;
+}
+
+@keyframes html{
+    to{
+        width: 85%;
+    }
+}
+@keyframes css{
+    to{
+        width: 65%;
+    }
+}
+@keyframes bootstarp{
+    to{
+        width: 35%;
+    }
+}
+@keyframes wordpress{
+    to{
+        width: 5%;
+    }
+}
+@keyframes javascript{
+    to{
+        width: 10%;
+    }
+}
+@keyframes jqueary{
+    to{
+        width: 35%;
+    }
+}
+@keyframes react{
+    to{
+        width: 25%;
+    }
+}
+@keyframes vue{
+    to{
+        width: 85%;
+    }
+}
+@keyframes node{
+    to{
+        width: 25%;
+    }
+}
+@keyframes github{
+    to{
+        width: 45%;
+    }
+}
+
+/* Work Section End */
+
+
+
+/* Achievement-Contact Section Start */
+
+.acheivement-contact{
+    padding: 3% 7%;
+    color: blanchedalmond;
+    background-color: cornflowerblue;
+    text-align: center;
+} 
+.acheivement-contact::after{
+    content: "";
+    clear: both;
+    display: table;
+} 
+.achievement p{
+   margin-bottom: 5%;
+} 
+.contact{
+    text-align: center;
+    padding: 7% 2%;
+}
+.contact input,textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin:6px ;
+    border: none;
+    border-radius: 2%;
+    font-size: 1rem;
+    resize: none;
+    text-align: center;
+    font-weight: 550;
+}
+textarea{
+    font-size: 1.2rem;
+}
+
+.contact button{
+    border: none;
+    background-color: darkblue;
+    color: whitesmoke;
+    padding: 3% 4%;
+    font-size: 16px;
+    width: 25%;
+    margin: 2%;
+    border-radius: 8%;
+    transition: .6s;
+    cursor: pointer;
+}
+.contact button:hover{
+    background-color: rgb(216, 77, 53);
+}
+
+.social-link{
+    text-align: center;
+}
+.social-link .s-btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 46px;
+   
+}
+.media-button .del{
+    visibility: hidden;
+}
+.social-link .s-btn:hover{
+background-color: rgb(65, 47, 25);
+}
+
+
+
+/* Achievement-Contact Section End */
+
+
+
+/* Main section End */
+
+
+/* Footer Section Start */
+
+footer{
+    background-color: rgb(8, 11, 29);
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    font-size: .8rem;
+}
+footer::after{
+    content: "";
+    clear: both;
+    display: table;
+}  
+
+.footer-menu a{
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(8, 11, 29);
+    display: block;
+}
+.footer-menu a:hover{
+    color: rgb(70, 78, 72);
+}
+.footer-dec{
+    margin: 11px;
+    
+}
+.footer-dec p{
+    font-size: 1.02rem;
+    text-align: center;
+}
+
+/* Footer Section End */
